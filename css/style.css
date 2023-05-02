@@ -94,15 +94,29 @@ main{
 }
 
 .front .back{
-
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .front{
-
+    background-color: #ffc3f8;
+    color: #000;
+    animation: flip 5s infinite;
 }
 
 .back{
+    background-color: #767676;
+    color: #fff;
+}
 
+@keyframes flip{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
 }
 
 footer{
