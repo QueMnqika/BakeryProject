@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fed3ff;
+}
+
+header>h1{
+    position: relative;
+    left: 20px;
+    padding-top: 80px;
+    font-size: 42px;
+}
+
+header img{
+    position: relative;
+    left: 80px;
+    width: 200px;
+}
+
+header>nav{
+    padding: 80px 30px 10px 30px;
+}
+
+nav>a{
+    text-decoration: none;
+    padding: 15px;
+    margin: 5px
+}
+
+main{
+    margin: 0px 75px;
+    background-color: #fcfcfc;
+}
+
+.animation{
+    position: relative;
+    left: 40%;
+    background-color: #838383;
+}
+
+.animation img{
+    background-color: #fcfcfc;
+}
+
+.animation img{
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: flip-animation 8s infinite;
+}
+
+@keyframes flip-animation{
+    0%{
+        transform: rotateY(0deg);
+       
+    }
+    50%{
+        transform: rotateY(180deg);
+
+    }
+    100%{
+        transform: rotateY(360deg);
+
+    }
+}
+
+.testimonials{
+    padding: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.flip-card{
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.inside-fc{
+    position: relative;
+    transition: transform 0.8;
+}
+
+.front .back{
+
+}
+
+.front{
+
+}
+
+.back{
+
+}
+
+footer{
+    background-color: #000000;
+    padding: 30px;
+}
+
+footer>p{
+    font-size: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.footer{
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fb{
+    background-color: #fff;
+    border-radius: 15%;
+}
+
+#twitter{
+    background-color: #fff;
+    border-radius: 70%;
+}
+
+#insta{
+    background-color: #fff;
+    border-radius: 25%;
+}
